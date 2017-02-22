@@ -1,0 +1,90 @@
+.headphonesbody{
+  background: #F7F7F8;
+}
+.headphonesMainImg{
+
+  /*background-image: url('images/headphones/header_headphone_retina_3340x810_V3.jpg.small.2x.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  background-size: cover;
+  height: 74vh;
+  margin-bottom: 115px;*/
+}
+.headerContainer{
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  left: 0;
+  width: 100%;
+}
+.headphonesMainImg h1{
+  text-align: center;
+  margin: 0 auto;
+  font-size: 70px;
+  font-family: helvetica;
+  font-weight: bold;
+  color: white;
+}
+.headphonesProductContainer{
+  margin: 0 auto;
+  background: white;
+  /*height: 590px;*/
+  width: 86%;
+  margin-bottom: 20px;
+}
+/*#00FA9A*/
+.headphonesProductInfo{
+  float: left;
+  background: white;
+  height: 100%;
+  width: 50%;
+  font-family: helvetica;
+  color: #A9ADB0;
+}
+.headphonesProductInfo h1{
+  margin-top: 100px;
+  margin-left: 8%;
+  color: black;
+}
+.headphonesProductInfo h5{
+  margin-left: 12%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.headphonesProductInfo p{
+  font-size: 15px;
+  font-weight: lighter;
+  margin-left: 12%;
+}
+.headphonesProductInfo ul{
+  font-size: 12px;
+  margin-left: 7%;
+  margin-top: 6%;
+  list-style-type: circle;
+}
+.headphonesProductImgDiv{
+  float: left;
+  /*background-image: url("images/headphones/_0001_MNEN2-RGB-bttm.png.large.2x.png");*/
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 50%;
+  text-align: center;
+}
+#buttonSection{
+  margin-top: 9%;
+  color: black;
+  font-weight: bold;
+}
+.headphonesProductButton{
+  width: 100px;
+  height: 35px;
+  border-radius: 30px;
+  margin-left: 20px;
+  background: #E01E3C;
+  border-style: none;
+  font-size: 14px;
+  color: white;
+}
