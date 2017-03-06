@@ -1,0 +1,1684 @@
+body{
+  margin: 0;
+  background: #F7F7F8;
+  min-width: 664px;
+}
+.h{
+  margin: 0;
+  padding-top: 30%;
+  font-size: 90px;
+  font-family: helvetica;
+  color: white;
+  font-weight: bold;
+  /*background: red;*/
+}
+.p{
+  color: #E3E3E3;
+  font-size: 20px;
+}
+.b1{
+  width: 130px;
+  height: 40px;
+  border-radius: 30px;
+  background-color: Transparent;
+  font-size: 18px;
+  color: #E3E3E3;
+  box-shadow: inset 0 0 0 0 white;
+  transition: all ease 0.5s;
+}
+.b1:hover{
+  box-shadow: inset 0 -40px 0 0 white;
+  color: black;
+}
+.b2:hover{
+  box-shadow: inset 0 -40px 0 0 white;
+  color: black;
+}
+.b2{
+  width: 130px;
+  height: 40px;
+  border-radius: 30px;
+  font-size: 18px;
+  background: #E01E3C;
+  color: white;
+  box-shadow: inset 0 0 0 0 white;
+  transition: all ease 0.5s;
+}
+.main-top-imageH{
+  text-align: center;
+  height: 80vh;
+  /*background: green;*/
+}
+.main-top-image{
+  height: 100vh;
+  width: 100%;
+  background: url(./images/main/x_talent_slider_2.0.jpg.large.1x.jpg) no-repeat center center;
+  background-size: cover;
+}
+@media only screen and (max-width: 1024px){
+  .main-top-imageH{
+    display: none;
+  }
+  .main-top-image{
+    height: 70vh;
+  }
+  .arrivedSmall{
+    height: 200px;
+    font-family: helvetica;
+  }
+  .arrivedHeaderSmall, .arrivedContentSmall{
+    /*background: red;*/
+    text-align: center;
+  }
+  .arrivedContentSmall{
+    font-size: 25px;
+  }
+  .arrivedContentBtnSmall, .arrivedContentBtnSmall2{
+    border-radius: 30px;
+    width: 200px;
+    height: 55px;
+    background: white;
+    font-size: 18px;
+  }
+  .arrivedContentBtnSmall2{
+    background: #E01E3C;
+    border-style: none;
+  }
+
+}
+@media only screen and (min-width: 1025px){
+  .arrivedSmall{
+    display: none;
+  }
+}
+.navbar{
+  height: 80px;
+  background: #161616;
+  width: 100%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  position: fixed;
+  z-index: 1000000;
+}
+
+.navItemMainContainer{
+  margin: 0 auto;
+  height: 100%;
+  /*background: white;*/
+  width: 90%;
+  /*text-align: center;*/
+  font-family: helvetica;
+  font-size: 14px;
+  color: white;
+}
+.beats-logo-nav{
+  height: 40px;
+  width: 40px;
+  float: left;
+  margin-left: 7.5%;
+  margin-top: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  cursor: hand;
+}
+.navLogo{
+  float: left;
+  /*background: yellow;*/
+  width: calc(100%/7);
+  height: 100%;
+}
+.mainNavItemAngledown{
+  float: left;
+  /*background: pink;*/
+  margin: 35px 0 0 10px;
+  font-weight: bold;
+}
+.mainNavItemHeadpones{
+  float: left;
+  /*background: green;*/
+  margin:  35px 0 0 0;
+  cursor: pointer;
+  cursor: hand;
+
+}
+.mainNavItem{
+  float: left;
+  /*background: blue;*/
+  width: 19%;
+  height: 100%;
+  /*border-left: solid;*/
+
+}
+.mainNavItem1{
+  float: left;
+  /*background: blue;*/
+  width: 18%;
+  height: 100%;
+  /*border-left: solid;*/
+}
+.mainNavItem p{
+  margin: 0px 0 0 0;
+}
+.mainNavItem1 p{
+  margin: 35px 0 0 0;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.navMainBars{
+  float: left;
+  /*background: green;*/
+  width: 6.7%;
+  height: 100%;
+  position: relative;
+}
+#burger-container{
+  position: relative;
+  /*background: red;*/
+  width 20px;
+  margin: 0 auto;
+  margin-top: 35px;
+}
+#burger{
+  cursor: pointer;
+  display: block;
+}
+#burger span{
+  background: white;
+  display: block;
+  width: 20px;
+  height: 2px;
+  margin-bottom: 5px;
+  position: relative;
+  top: 0;
+  transition: all 300ms ease-in-out;
+}
+#burger-container.open span:nth-child(2){
+  width: 0;
+  opacity: 0;
+}
+#burger-container.open span:nth-child(1){
+  transform: rotate(-45deg);
+  top: 7px;
+}
+#burger-container.open span:nth-child(3){
+  transform: rotate(45deg);
+  top: -7px;
+}
+
+.fix-a-tag{
+  text-decoration: none;
+  color: inherit;
+}
+.navMainSearch{
+  float: left;
+  /*background: purple;*/
+  width: 5%;
+  height: 100%;
+}
+.search1{
+  margin: 35px 0 0 0;
+  cursor: pointer;
+  cursor: hand;
+  /*background: red;*/
+}
+.bars1{
+  margin: 35px 0 0 0;
+  cursor: pointer;
+  cursor: hand;
+}
+
+
+.rotate{
+  transform: rotate(180deg);
+  color: red;
+  cursor: pointer;
+  cursor: hand;
+}
+.fa-angle-down:hover{
+  transform: rotate(180deg);
+  color: red;
+  cursor: pointer;
+  cursor: hand;
+}
+
+@media only screen and (max-width: 1024px){
+  .mainNavItem, .mainNavItem1, .navMainBars, .navMainSearch, .floatingLogIn {
+    display: none;
+  }
+  .navLogo{
+    /*background: yellow;*/
+    width: calc(100%/3);
+    height: 100%;
+    text-align: center;
+  }
+  .navSearchSmall, .navBarsSmall{
+    float: left;
+    width: calc(100%/3);
+    height: 100%;
+    /*background: blue;*/
+  }
+  .beats-logo-nav{
+    float: none;
+  }
+  .bars2{
+    float: right;
+    margin: 35px 0 0 0;
+    cursor: pointer;
+    cursor: hand;
+  }
+}
+  @media only screen and (min-width: 1025px) {
+    .navSearchSmall, .navBarsSmall{
+      display: none;
+    }
+  }
+
+/* 1st navbar dropdown-------------------------------------------------*/
+.headphones-dropdown{
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  padding-top: 80px;
+  position: fixed;
+  z-index: 10000;
+
+
+}
+.headphones-dropdown-inner{
+  background: #242323;
+  height: 530px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.headphones-dropdown-inner-browse{
+  color: white;
+  height: 410px;
+  width: 21%;
+  /*background: blue;*/
+  float: left;
+}
+.browse-items{
+  margin-top:0;
+  padding-top: 20px;
+  margin-left: 95px;
+  /*background: red;*/
+}
+.browse-items-a:hover{
+  border-bottom: solid 1px red;
+  cursor: pointer;
+}
+.browse-items-list:hover{
+  /*cursor: pointer;*/
+  /*text-decoration: underline;
+  text-decoration-color: red;*/
+  /*border-bottom-style: solid;
+  border-bottom-color: red;*/
+}
+.browse-items-list{
+  padding-top: 10px;
+  color: #ADB0B2;
+  margin-left: 65px;
+  transform: scaleX(0.7);
+}
+.serena-nav{
+  height: 410px;
+  /*background: green;*/
+  width: 79%;
+  float: left;
+}
+.serena-nav-imgDiv{
+  float: left;
+  margin-top: 62px;
+  /*padding-top: 100px;*/
+  margin-left: 5px;
+  height: 84.5%;
+  width: 35%;
+  background-image: url('./images/main/serenaNav/headphones_7NA_retina_920x920_US.jpg.large.2x.jpg');
+  background-size: 107%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: .2s ease-in-out;
+}
+.serena-nav-imgDiv:hover{
+  background-size: 90%;
+}
+.serena-nav-img{
+  height: 100%;
+  width: 100%;
+
+}
+.serena-nav-imgFade{
+  display: none;
+  background: black;
+  opacity: 0.5;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.serena-nav-imgFadeBtn{
+  /*position: absolute;*/
+  margin: 0 auto;
+  /*margin: 160px 0 0 80px;*/
+  height: 100%;
+  width: 150px;
+  /*border-radius: 30px;*/
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  /*border: 2px solid white;
+  box-shadow: inset 0 0 0 0 #BEC1C3;
+  transition: all ease 0.3s;*/
+}
+.serena-nav-imgFadeBtnInner:hover{
+box-shadow: inset 0 -50px 0 0 white;
+color: black;
+}
+.serena-nav-imgFadeBtnInner{
+  position: absolute;
+  width: 150px;
+  height: 30px;
+  /*background: red;*/
+  margin-top: 160px;
+  border: 2px solid white;
+  box-shadow: inset 0 0 0 0 #BEC1C3;
+  transition: all ease 0.3s;
+  border-radius: 30px;
+}
+.serena-nav-imgFadeP{
+
+}
+
+
+.headphones-nav-img{
+  float: left;
+  margin-top: 62px;
+  margin-left: 19px;
+  background: white;
+  height: 40%;
+  width: 16%;
+  /*background-image: url('./images/main/serenaNav/sw_subnav_retina_300x300_V2.png.large.2x.png');*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70%;
+}
+.headphones-nav-img2{
+  float: left;
+  margin-top: 18px;
+  margin-left: 19px;
+  background: white;
+  height: 40%;
+  width: 16%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70%;
+}
+.headphones-nav-img3{
+  float: left;
+  margin-top: 18px;
+  margin-left: 19px;
+  /*background: white;*/
+  height: 40%;
+  width: 16%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 50%;
+}
+.nav-browse-btn{
+  float: left;
+  width: 140px;
+  height: 40px;
+  margin-top: 25px;
+  border-radius: 30px;
+  margin-left: 95px;
+  background: #242323;
+  border-color: #ADB0B2;
+  font-size: 14px;
+  color: #ADB0B2;
+  box-shadow: inset 0 0 0 0 #BEC1C3;
+  transition: all ease 0.3s;
+}
+.nav-browse-btn:hover{
+  box-shadow: inset 0 -50px 0 0 #BEC1C3;
+  color: black;
+}
+
+.nav-beats-caption{
+  float: left;
+  margin-left: 7%;
+  font-size: 14px;
+  color: #525252;
+}
+/*second navbar dropdown-------------------------------------------------------*/
+.earphones-dropdown{
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  padding-top: 80px;
+  position: fixed;
+  z-index: 1000;
+
+}
+.earphones-dropdown-inner{
+  background: #242323;
+  height: 430px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.earphones-dropdown-inner-browse{
+  color: white;
+  height: 100%;
+  width: 21%;
+  /*background: red;*/
+  /*background: blue;*/
+  float: left;
+}
+.browse{
+  margin-top:0;
+  padding-top: 32px;
+  margin-left: 95px;
+
+}
+.browse-items-list2{
+  margin-left: 65px;
+  transform: scaleX(0.7);
+  padding-top: 10px;
+  color: #ADB0B2;
+}
+.nav-browse-btn2{
+  float: right;
+  width: 140px;
+  height: 45px;
+  margin-top: 29px;
+  border-radius: 30px;
+  margin-right: 10%;
+  background: #242323;
+  border-color: #ADB0B2;
+  font-size: 14px;
+  color: #ADB0B2;
+  box-shadow: inset 0 0 0 0 #BEC1C3;
+  transition: all ease 0.3s;
+}
+.nav-browse-btn2:hover{
+  box-shadow: inset 0 -50px 0 0 #BEC1C3;
+  color: black;
+}
+.lebron-nav{
+  height: 365px;
+  /*background: green;*/
+  width: 79%;
+  float: left;
+
+}
+.lebron-nav-img{
+  float: left;
+  padding-top: 20px;
+  padding-left: 5px;
+  height: 95%;
+  width: 35%;
+
+}
+.earphones-nav-img{
+  float: left;
+  margin-top: 20.5px;
+  margin-left: 20px;
+  background: white;
+  height: 40%;
+  width: 16%;
+}
+.earphones-nav-img2{
+  float: left;
+  margin-top: 18px;
+  margin-left: 19px;
+  background: white;
+  height: 40%;
+  width: 16%;
+}
+
+/*barNavDropdown------------------------------------------------------------------*/
+
+.barDropdown{
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  display: none;
+  padding-top: 80px;
+  position: fixed;
+  z-index: 10000;
+  text-align: center;
+  font-family: helvetica;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+.barDropdownInner{
+  height: 100vh;
+
+}
+.barDropdowndiv{
+  /*background: red;*/
+  width: 35%;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding-top: 0;
+  height: 70px;
+}
+.barDropdowndiv1{
+  /*background: red;*/
+  width: 35%;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding-top: 0;
+  height: 70px;
+}
+.barDropdownItem{
+  margin-top: 0;
+  padding-top: 15px;
+
+}
+
+.barDropdownItem1{
+  margin-top: 0;
+  padding-top: 15px;
+
+}
+
+
+
+/*new beats products section ------------------------------------------------*/
+.new-beats-products{
+  height: 560px;
+  background: #F7F7F8;
+  /*background: green;*/
+  text-align: center;
+  /*display: none;*/
+}
+.new-beats-products-header{
+  font-family: helvetica;
+  font-size: 45px;
+  padding-top: 80px;
+}
+.wrapper{
+  /*position: absolute;*/
+  left: 0;
+  margin: 0 auto;
+  margin-top: 75px;
+  width: 90%;
+  background: #F7F7F8;
+  height: 345px;
+  /*background: red;*/
+}
+.new-beats-imgslider{
+  float: left;
+  height: 100%;
+  width: calc(99%/3);
+  margin-right: .5%;
+  background: white;
+  background-image: url('images/main/newBeatsImgSlider/1/black-2_V2.png');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.new-beats-imgslider2{
+  float: left;
+  height: 100%;
+  width: calc(99%/3);
+  margin-right: .5%;
+  background: white;
+  background-image: url('images/main/newBeatsImgSlider/2/gold_V2.png');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.new-beats-imgslider3{
+  float: left;
+  height: 100%;
+  width: calc(99%/3);
+  margin-left: 0;
+  background: white;
+  background-image: url('images/main/newBeatsImgSlider/3/black-2_2016-11-04_A_V2.png');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.new-beats-imgslider-img{
+  margin-top: 20%;
+  height: 60%;
+  width: 65%;
+}
+@media only screen and (max-width: 1024px){
+  .new-beats-imgslider3, .new-beats-imgslider2, .new-beats-imgslider{
+    font-size: 25px;
+  }
+}
+/*available now beats section --------------------------------------------------*/
+
+.availableNowBeats{
+  height: 530px;
+  width: 100%;
+  /*background: blue;*/
+  margin: 0 auto;
+  margin-top: 0;
+  /*display: none;*/
+}
+
+.availableNowBeatsExplore{
+  font-family: helvetica;
+  color: white;
+  float: left;
+  height: 345px;
+  width: 35%;
+  background: #E01E3C;
+  margin-top: 63.5px;
+  margin-left: 7.8%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.availableNowBeatsExploreP{
+  padding-left: 7%;
+
+  font-size: 15px;
+  font-weight: lighter;
+}
+.availableNowBeatsExploreH{
+  padding-left: 7%;
+  padding-top: 70px;
+}
+
+.availableNowBeatsBtn{
+  margin-left: 7%;
+  margin-top: 8%;
+  width: 220px;
+  height: 45px;
+  background: #E01E3C;
+  border-radius: 30px;
+  border-color: #ADB0B2;
+  color: white;
+  font-size: 13px;
+  font-weight: lighter;
+  box-shadow: inset 0 0 0 0 white;
+  transition: all ease 0.8s;
+}
+.availableNowBeatsBtn:hover{
+  box-shadow: inset 0 -100px 0 0 white;
+  color: black;
+  font-weight: bold;
+}
+.availableNowBeatsEmbedded{
+  float: left;
+  height: 345px;
+  width: 50%;
+  background: blue;
+  margin-top: 63.5px;
+}
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .availableNowBeatsExploreP{
+      font-size: 20px;
+    }
+    .availableNowBeatsBtn{
+      font-size: 20px;
+    }
+}
+
+
+/*beatsEpPremium Section ----------------------------------------------*/
+.beatsEpPremiumMain{
+  height: 450px;
+  width 100%;
+  background: #F7F7F8;
+  /*background: red;*/
+  margin-top: 0;
+  padding-top: 0;
+  display: none;
+
+}
+.beatsEpPremiumMainImg{
+  margin-left: 7%;
+  height: 441px;
+  width: 85%;
+  background: yellow;
+  background: url('images/main/BeatsEP/ep_homepage_featured_card_left_2.jpg.large.2x.jpg') no-repeat center center;
+  background-size: 84%;
+  background-position: left;
+  transition: all .5s ease-out;
+}
+.beatsEpPremiumMainImg:hover{
+  background-size: 80%;
+}
+.beatsEpPremiumMainText{
+  background: white;
+  height: 360px;
+  width: 36%;
+  position: absolute;
+  margin-left: 49%;
+  margin-top: 6.29%;
+
+}
+
+.beatsEpPremiumMainH{
+  font-family: helvetica;
+  padding-left: 11%;
+  margin-top:10%;
+
+}
+.beatsEpPremiumMainH2{
+  font-family: helvetica;
+  padding-left: 11%;
+
+}
+.beatsEpPremiumMainP{
+  font-family: helvetica;
+  color: #8C8C8C;
+  font-weight: lighter;
+  padding-left: 11%;
+  font-size: 14px;
+}
+.beatsEpPremiumMainP2{
+  font-family: helvetica;
+  color: #8C8C8C;
+  font-weight: lighter;
+  padding-left: 11%;
+  font-size: 15px;
+}
+.beatsEpPremiumBtn{
+  margin-top: 25px;
+  margin-left: 12%;
+  border-radius: 33px;
+  width: 120px;
+  height: 40px;
+  background: white;
+  box-shadow: inset 0 0 0 0 black;
+  transition: all ease 0.8s;
+
+}
+.beatsEpPremiumBtn:hover{
+  box-shadow: inset 0 100px 0 0 black;
+  color: white;
+  font-weight: bold;
+}
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2){
+    .beatsEpPremiumMainSamll{
+      height: 3000px;
+    }
+    .beatsEpPremiumMainSamllText{
+      font-size: 23px;
+    }
+    .beatsEpPremiumMainSamllText button{
+      font-size: 22px;
+    }
+
+  }
+@media only screen and (max-width: 1024px){
+  .beatsEpPremiumMain{
+    display: none;
+  }
+
+  .beatsEpPremiumMainSamll{
+    margin: 0 auto;
+    height: 650px;
+    width: 90%;
+    background: #F7F7F8;
+    /*background: red;*/
+    margin-top: 0;
+    padding-top: 0;
+    font-family: helvetica;
+  }
+  .beatsEpPremiumMainSamllImg{
+    /*background: blue;*/
+    background-image: url('images/main/BeatsEP/ep_homepage_featured_card_left_2.jpg.large.2x.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 70%;
+  }
+  .beatsEpPremiumMainSamllText{
+    background: white;
+    height: 30%;
+  }
+  .beatsEpPremiumMainSamllText h3, p{
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-top: 15px;
+
+  }
+  .beatsEpPremiumMainSamllText p{
+    font-weight: lighter;
+    color: #9B9B9B;
+  }
+  .beatsEpPremiumMainSamllText button{
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 100px;
+    height: 35px;
+    border-radius: 30px;
+    background: white;
+  }
+}
+@media only screen and (min-width: 1025px){
+  .beatsEpPremiumMainSamll{
+    display: none;
+  }
+}
+
+/*Beats Ultra Violet ----------------------------------------------------*/
+
+.beatsUltraVioletCollection{
+  height: 800px;
+  /*background-size: 40%;*/
+  background-position: right;
+  background: r#F7F7F8;
+  display: none;
+  /*position: absolute;*/
+}
+.beatsUltraVioletCollectionImgMain{
+  margin-top: 9%;
+  background: url('images/main/uv_homepage_tout_alisa_V2.jpg.large.1x.jpg') center no-repeat;
+  /*background: blue;*/
+  background-size: 45% 100%;
+  height: 780px;
+  background-position: right;
+  margin-right: 8%;
+  transition: all .5s ease-out;
+}
+.beatsUltraVioletCollectionImgMain:hover{
+  background-size: 50% 105%;
+}
+.beatsUltraVioletCollectionText{
+  height: 490px;
+  width: 43%;
+  background: #222021;
+  padding-top: 0;
+  margin-top: 0;
+  margin-left: 12.1%;
+}
+.beatsUltraVioletCollectionH{
+  font-family: helvetica;
+  font-weight: bold;
+  color: white;
+  font-size: 42px;
+  padding-left: 10%;
+  padding-top:9%;
+}
+.beatsUltraVioletCollectionH2{
+  font-family: helvetica;
+  font-weight: bold;
+  color: white;
+  font-size: 42px;
+  padding-left: 10%;
+}
+.beatsUltraVioletCollectionP{
+  font-family: helvetica;
+  color: #E3E3E3;
+  padding-left: 10%;
+  font-weight: lighter;
+  font-size: 15px;
+
+}
+.beatsUltraVioletCollectionP2{
+  font-family: helvetica;
+  color: #E3E3E3;
+  padding-left: 11%;
+  font-weight: lighter;
+  font-size: 15px;
+}
+.beatsUltraVioletCollectionBtn{
+  margin-top: 25px;
+  margin-left: 10%;
+  border-radius: 33px;
+  width: 220px;
+  height: 45px;
+  background: #222021;
+  border-color: #ADB0B2;
+  color: white;
+  font-size: 13px;
+  font-weight: lighter;
+  box-shadow: inset 0 0 0 0 white;
+  transition: all ease 0.8s;
+}
+.beatsUltraVioletCollectionBtn:hover{
+  box-shadow: inset 0 100px 0 0 white;
+  color: black;
+  font-weight: bold;
+}
+.beatsUltraVioletCollectionSubImgDiv{
+  margin-top: 20px;
+  margin-left: -50px;
+  height: 347px;
+  width: 70%;
+  background: white;
+  float: left;
+  text-align: center;
+  font-family: helvetica;
+}
+.beatsUltraVioletCollectionSubImgDiv2{
+  height: 100px;
+  background: white;
+  margin-top: 20px;
+  height: 347px;
+  width: 70%;
+  margin-left: 65%;
+  text-align: center;
+  font-family: helvetica;
+}
+.beatsUltraVioletCollectionSubImg{
+  height: 55%;
+  width: 55%;
+  margin-top: 25px;
+}
+.beatsUltraVioletCollectionSubImg2{
+  height: 55%;
+  width: 55%;
+  margin-top: 25px;
+}
+@media only screen and (min-width: 1025px){
+  .beatsUltraVioletCollectionSmall{
+    display: none;
+  }
+}
+@media only screen and (max-width: 1024px){
+  .beatsUltraVioletCollection{
+    display: none;
+  }
+  .beatsUltraVioletCollectionSmall{
+    height: 2500px;
+    /*background: blue;*/
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .beatsUltraVioletCollectionImgSmall{
+    height: 900px;
+    /*background: red;*/
+    background-image: url('images/main/uv_homepage_tout_alisa_V2.jpg.large.1x.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+  }
+  .beatsUltraVioletCollectionTextSmall{
+    height: 1599px;
+    background: #222021;
+    text-align: center;
+    font-family: helvetica;
+    color: white;
+  }
+
+  .beatsUltraVioletCollectionHSmall{
+    margin-top: 0;
+    padding-top: 50px;
+    font-size: 60px;
+    font-weight: bold;
+  }
+  .beatsUltraVioletCollectionH2Small{
+    margin-top: 0;
+    padding-top: 0px;
+    font-size: 60px;
+    font-weight: bold;
+  }
+  .beatsUltraVioletCollectionTextSmall p{
+    margin: 0;
+    color: #8C8C8C;
+    font-size: 25px;
+  }
+  .beatsUltraVioletCollectionTextSmall button{
+    margin-top: 30px;
+    width: 300px;
+    height: 60px;
+    border-radius: 30px;
+    background: #222021;
+    color: white;
+    font-size: 25px;
+  }
+  .beatsUltraVioletCollectionImg2Small{
+    margin: 0 auto;
+    background: white;
+    background-image: url('images/main/beatsUltraVioletCollection/UV_V2 (1).png');
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 500px;
+    margin-top: 30px;
+  }
+  .beatsUltraVioletCollectionImg3Small{
+    margin: 0 auto;
+    background: white;
+    background-image: url('images/main/beatsUltraVioletCollection/UV_V2.png');
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 500px;
+    margin-top: 30px;
+  }
+  .beatsUltraVioletCollectionImg2Small h2{
+    color: black;
+    padding-top: 450px;
+  }
+  .beatsUltraVioletCollectionImg3Small h2{
+    color: black;
+    padding-top: 450px;
+  }
+}
+/*beatsAlexWangMain--------------------------------------------------*/
+
+.beatsAlexWangMain{
+  margin-top: 100px;
+  margin-left: 95px;
+  height: 442px;
+  width: 73%;
+  background-image: url('images/main/alexWang/aw_featured_mobile.jpg.large.1x.jpg');
+  background-size: 110%;
+  background-position: : center;
+  background-repeat: no-repeat;
+  transition: all .5s ease-out;
+  display: none;
+}
+.beatsAlexWangMain:hover{
+
+  background-size: 100%;
+}
+.beatsAlexWangMainText{
+  float: right;
+  margin-right: -17%;
+  margin-top: 7%;
+  height: 376.5px;
+  width: 50%;
+  background: white;
+}
+.beatsAlexWangMainTextH{
+  font-family: helvetica;
+  font-weight: bold;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+.beatsAlexWangMainTextH2{
+  font-family: helvetica;
+  font-weight: bold;
+  margin-left: 10%;
+  margin-top: 4%;
+}
+.beatsAlexWangMainTextP{
+  font-family: helvetica;
+  margin-left: 10%;
+  color: #8C8C8C;
+  font-weight: lighter;
+  font-size: 15px;
+}
+.beatsAlexWangMainTextP2{
+  font-family: helvetica;
+  margin-left: 10%;
+  color: #8C8C8C;
+  font-weight: lighter;
+  font-size: 15px;
+}
+.beatsAlexWangMainTextButton{
+  font-family: helvetica;
+  font-size: 13px;
+  font-weight: lighter;
+  border-radius: 30px;
+  margin-left: 10%;
+  width: 120px;
+  height: 40px;
+  background: white;
+  box-shadow: inset 0 0 0 0 black;
+  transition: all ease 0.8s;
+}
+.beatsAlexWangMainTextButton:hover{
+  box-shadow: inset 0 100px 0 0 black;
+  color: white;
+}
+  @media only screen and (max-width: 1024px) {
+    .beatsAlexWangMain{
+      display: none;
+    }
+    .beatsAlexWangMainSmall{
+      width: 90%;
+      height: 680px;
+      background: white;
+      margin: 0 auto;
+    }
+    .beatsAlexWangMainImgSmall{
+      background-image: url('images/main/alexWang/aw_featured_mobile.jpg.large.1x.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      height: 60%;
+      transition: all .5s ease-out;
+    }
+    .beatsAlexWangMainImgSmall:hover{
+      background-size: 95%;
+    }
+    .beatsAlexWangMainTextSmall{
+      /*background: yellow;*/
+      height: 40%;
+    }
+    .beatsAlexWangMainTextSmall h2{
+      padding-top: 40px;
+      margin: 0;
+      margin-left: 50px;
+    }
+    .beatsAlexWangMainTextSmall p{
+      margin: 0;
+      margin-left: 30px;
+      color: #8C8C8C;
+      font-size: 25px;
+    }
+    .beatsAlexWangMainTextBtnSmall{
+      margin-top: 10px;
+      margin-left: 50px;
+      /*border-color: grey;*/
+      height: 40px;
+      width: 100px;
+      border-radius: 30px;
+      background: white;
+      font-size: 22px;
+    }
+  }
+  @media only screen and (min-width: 1025px){
+      .beatsAlexWangMainSmall{
+        display: none;
+      }
+  }
+
+/*Music = Miles ---------------------------------------------------------*/
+.musicMilesMain{
+  height: 442px;
+  margin-right: 93px;
+  margin-top: 120px;
+  background-image: url('images/main/musicMilesMain/victory_homepage_featured_card_left.jpg.large.2x.jpg');
+  background-repeat: no-repeat;
+  background-size: 78%;
+  background-position: right;
+  transition: all .5s ease-in-out;
+  display: none;
+}
+.musicMilesMain:hover{
+  background-size: 76%;
+}
+.musicMilesMainText{
+  /*background: purple;*/
+  background: white;
+  float: left;
+  height: 50px;
+  width: 39%;
+  margin-left: 95px;
+  margin-top: 115px;
+  height: 326.5px;
+  /*display: none;*/
+}
+.musicMilesMainTextH{
+  font-family: helvetica;
+  font-weight: bold;
+  font-size: 40px;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+.musicMilesMainTextP{
+  font-family: helvetica;
+  font-weight: lighter;
+  margin-left: 10%;
+  font-size: 14px;
+  color: #8C8C8C;
+
+}
+.musicMilesMainTextP2{
+  font-family: helvetica;
+  font-weight: lighter;
+  margin-left: 10%;
+  font-size: 15px;
+  color: #8C8C8C;
+}
+.musicMilesMainTextBtn{
+  font-family: helvetica;
+  font-size: 13px;
+  font-weight: lighter;
+  border-radius: 30px;
+  margin-left: 10%;
+  width: 120px;
+  height: 40px;
+  background: white;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 black;
+  transition: all ease 0.8s;
+}
+.musicMilesMainTextBtn:hover{
+  box-shadow: inset 0 100px 0 0 black;
+  color: white;
+}
+
+@media only screen and (max-width: 1024px){
+  .musicMilesMain{
+    display: none;
+  }
+  .musicMilesMainSmall{
+    margin: 0 auto;
+    margin-top: 40px;
+    background: white;
+    width: 90%;
+    height: 700px;
+  }
+  .musicMilesMainImgSmall{
+    background-image: url('images/main/musicMilesMain/victory_homepage_featured_card_left.jpg.large.2x.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 60%;
+    transition: all .5s ease-out;
+  }
+  .musicMilesMainImgSmall:hover{
+    background-size: 95%;
+  }
+  .musicMilesMainTextSmall{
+    height: 40%;
+  }
+  .musicMilesMainTextSmall h2{
+    padding-top: 40px;
+    margin: 0;
+    margin-left: 50px;
+  }
+  .musicMilesMainTextSmall p{
+    margin: 0;
+    font-size: 25px;
+    margin-left: 30px;
+    color: #8C8C8C;
+  }
+}
+@media only screen and (min-width: 1025px){
+  .musicMilesMainSmall{
+    display: none;
+  }
+}
+/*Be Heard Main -----------------------------------------------------------------------*/
+.beHeardMain{
+  height: 800px;
+  /*background: green;*/
+  display: none;
+}
+.beHeardMainHeaderContainer{
+  text-align: center;
+  height: 280px;
+  /*background: blue;*/
+}
+.beHeardMainHeader{
+  margin-top: 0;
+  padding-top: 140px;
+  font-family: helvetica;
+  font-size: 45px;
+}
+.beHeardMainP{
+  color: #8C8C8C;
+  font-family: helvetica;
+  font-weight: lighter;
+  font-size: 25px;
+}
+.beHeardMainEmbed{
+  margin-top: 100px;
+  background: url('https://www.youtube.com/embed/5dDJEC_d3Uw');
+  height: 510px;
+  margin-left: 15%;
+  width: 70%;
+}
+.beHeardVideo:hover{
+  height: 100%;
+  transition: all .2s ease-in-out;
+}
+
+/*product Support main--------------------------------------------------------------------------------------*/
+
+.productSupportMain{
+  /*background: red;*/
+  height:470px;
+  text-align: center;
+}
+.productSupportMainText{
+  /*background: blue;*/
+  height: 280px;
+
+}
+.productSupportMainTextH{
+  padding-top: 140px;
+  margin-top: 0;
+  font-family: helvetica;
+  font-size: 45px;
+}
+.productSupportMainTextP{
+  color: #8C8C8C;
+  font-family: helvetica;
+  font-weight: lighter;
+}
+.productSupportMainImgs{
+  margin: 0 auto;
+  height: 190px;
+  width: 85%;
+  background: white;
+}
+.productSupportMainImg1{
+  float: left;
+  height: 100px;
+  width: 100px;
+  /*background: green;*/
+  border-radius: 50%;
+  margin-top: 30px;
+  margin-left: 10%;
+  background-image: url('images/main/productSupportMain/support_2016-11-04_A_V2.jpg.large.1x.jpg');
+  /*background-repeat: no-repeat;*/
+  background-size: 125%;
+  background-position: center;
+  transition: all .5s ease-in-out;
+}
+.productSupportMainImg1:hover{
+  background-size: 100%;
+}
+.productSupportMainImg2{
+  float: left;
+  height: 100px;
+  width: 100px;
+  /*background: green;*/
+  border-radius: 50%;
+  margin-top: 30px;
+  margin-left: 10%;
+  background-image: url('images/main/productSupportMain/register_2016-11-04_A_V2.jpg.large.1x.jpg');
+  /*background-repeat: no-repeat;*/
+  background-size: 125%;
+  background-position: center;
+  transition: all .5s ease-in-out;
+}
+.productSupportMainImg2:hover{
+  background-size: 100%;
+}
+.productSupportMainImg3{
+  float: left;;
+  height: 100px;
+  width: 100px;
+  /*background: green;*/
+  border-radius: 50%;
+  margin-top: 30px;
+  margin-left: 10%;
+  background-image: url('images/main/productSupportMain/update_2016-11-04_A_V2.jpg.large.1x.jpg');
+  /*background-repeat: no-repeat;*/
+  background-size: 125%;
+  background-position: center;
+  transition: all .5s ease-in-out;
+}
+.productSupportMainImg3:hover{
+  background-size: 100%;
+}
+.productSupportMainImg4{
+  float: left;
+  height: 100px;
+  width: 100px;
+  /*background: green;*/
+  border-radius: 50%;
+  margin-top: 30px;
+  margin-left: 10%;
+  background-image: url('images/main/productSupportMain/service_2016-11-04_A_V2.jpg.large.1x.jpg');
+  /*background-repeat: no-repeat;*/
+  background-size: 125%;
+  background-position: center;
+  transition: all .5s ease-in-out;
+}
+.productSupportMainImg4:hover{
+  background-size: 100%;
+}
+.productSupportMainImgsBox{
+  /*background: purple;*/
+  height: 190px;
+  width: 780px;
+  margin: 0 auto;
+}
+.productSupportMainP{
+  color: #D5D5D5;
+  margin-top: 120px;
+  font-size: 12px;
+  font-weight: lighter;
+  width: 200px;
+  margin-left: -60%;
+}
+@media only screen and (max-width: 1024px){
+  .productSupportMain{
+    display: none;
+  }
+  .productSupportSmall{
+    margin: 0 auto;
+    margin-top: 200px;
+    /*background: white;*/
+    height:470px;
+    width: 90%;
+    text-align: center;
+  }
+  .productSupportTextSmall{
+    height: 270px;
+    /*background: yellow;*/
+    /*padding-top: 100px;*/
+  }
+  .productSupportTextSmall h1{
+    padding-top: 100px;
+    font-size: 50px;
+  }
+  .productSupportTextSmall p{
+    font-size: 28px;
+  }
+  .productSupportImgsSmall{
+    height: 200px;
+    /*background: green;*/
+
+  }
+  .productSupportImg1Small{
+    float: left;
+    width: calc(100%/4);
+    height: 100%;
+    background-image: url('images/main/productSupportMain/support_2016-11-04_A_V2.jpg.large.1x.jpg');
+  }
+  .productSupportImg2Small{
+    float: left;
+    width: calc(100%/4);
+    height: 100%;
+    background-image: url('images/main/productSupportMain/register_2016-11-04_A_V2.jpg.large.1x.jpg');
+  }
+  .productSupportImg3Small{
+    float: left;
+    width: calc(100%/4);
+    height: 100%;
+    background-image: url('images/main/productSupportMain/update_2016-11-04_A_V2.jpg.large.1x.jpg');
+  }
+  .productSupportImg4Small{
+    float: left;
+    width: calc(100%/4);
+    height: 100%;
+    background-image: url('images/main/productSupportMain/service_2016-11-04_A_V2.jpg.large.1x.jpg');
+  }
+  .productSupportImgPSmall{
+    color: white;
+    font-size: 20px;
+
+  }
+}
+@media only screen and (min-width: 1025px){
+  .productSupportSmall{
+    display: none;
+  }
+}
+/*Join the beats Army-------------------------------------*/
+
+.joinBeatsArmyMain{
+  background: white;
+  height: 400px;
+  width: 85%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 120px;
+  margin-bottom: 100px;
+}
+.joinBeatsArmyMainH{
+  font-family: helvetica;
+  font-size: 40px;
+  font-weight: bold;
+  padding-top: 120px;
+}
+.joinBeatsArmyMainP{
+  padding-top: 15px;
+  font-family: helvetica;
+  font-weight: lighter;
+  color: #BEBEBE;
+}
+.joinBeatsArmyMainEmail{
+  margin: 0 auto;
+  /*background: blue;*/
+  height: 50px;
+  width: 450px;
+  /*border-style: solid;*/
+  /*border-color: grey;*/
+}
+.joinBeatsArmyMainInput{
+  border-radius:  30px 0 0 30px;
+  float: left;
+  height: 42.5px;
+  width: 70%;
+  background: white;
+  font-size: 15px;
+}
+.joinBeatsArmyMainBtn{
+  float: left;
+  margin-top: 0.5px;
+  width: 28.6%;
+  height: 48px;
+  border-radius: 0 30px 30px 0;
+  background: white;
+}
+.joinBeatsArmyMainBtnH{
+  float: left;
+  margin-left: 20px;
+  font-weight: bold;
+}
+.joinBeatsArmyMainBtnI{
+  float: left;
+  margin-left: 20px;
+  padding-top: 10px;
+}
+/*endOfPageContainer-------------------------------------------*/
+
+.endOfPageContainer{
+  height: 580px;
+  background: white;
+  /*margin-top: 100px;*/
+}
+.endOfPageLogoDiv{
+  float: left;
+  height: 400px;
+  /*background: yellow;*/
+  width: 28%;
+}
+.endOfPageLogo{
+  height: 40px;
+  width: 40px;
+  padding-top: 87px;
+  margin-left: 97px;
+
+}
+.endOfPageDiv2{
+  float: left;
+  height: 400px;
+  width: 17%;
+  /*background: purple;*/
+}
+.endOfPageDiv3{
+  float: left;
+  height: 400px;
+  width: 17%;
+  /*background: green;*/
+}
+.endOfPageDiv4{
+  float: left;
+  height: 400px;
+  width: 16%;
+  /*background: pink;*/
+}
+.endOfPageDiv5{
+  float: left;
+  height: 400px;
+  width: 18%;
+  /*background: purple;*/
+}
+.endOfPageDiv2H{
+  margin-top: 98px;
+  font-family: helvetica;
+}
+.endOfPageDiv2P1{
+  font-family: helvetica;
+  font-weight: lighter;
+  margin-top: 30px;
+  font-size: 11.5px;
+  color: #A7A6A6;
+}
+.endOfPageDiv2P{
+  font-family: helvetica;
+  font-weight: lighter;
+  font-size: 11.5px;
+  color: #A7A6A6;
+}
+.endOfPageDiv3H{
+  margin-top: 98px;
+  font-family: helvetica;
+}
+.endOfPageDiv3P1{
+  font-family: helvetica;
+  font-weight: lighter;
+  margin-top: 30px;
+  font-size: 11.5px;
+  color: #A7A6A6;
+}
+.endOfPageDiv3P{
+  font-family: helvetica;
+  font-weight: lighter;
+  color: #A7A6A6;
+  font-size: 11.5px;
+}
+.endOfPageIcons{
+  margin-left: 10px;
+}
+.endOfPageLocation{
+  margin-top: 70px;
+  font-family: helvetica;
+}
+.floatingLogIn{
+
+  z-index: 20000;
+  width: 85px;
+  position: fixed;
+  right: 30px;
+  bottom: 20px;
+}
+.floatingLogInBtn{
+  z-index: 200000;
+  height: 50px;
+  width: 100px;
+  margin-top: 20%;
+  background: #161616;
+  border-radius: 30px;
+  color: white;
+  box-shadow: inset 0 0 0 0 #31302B;
+  transition: all ease 0.5s;
+}
+.floatingLogInBtn:hover{
+  box-shadow: inset 0 0 0 50px #E01E3C;
+  color: black;
+  font-weight: bold;
+}
+.nono{
+  display: none;
+}

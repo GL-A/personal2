@@ -1,0 +1,256 @@
+<div class="bagHtmlBody">
+  <div class="bagNav">
+    <div class="navItemContainer">
+      <div class="navItemApple">
+        <i class="fa fa-apple fa-lg" aria-hidden="true"></i>
+      </div>
+      <div class="navItem">
+        Mac
+      </div>
+      <div class="navItem">
+        iPad
+      </div>
+      <div class="navItem">
+        iPhone
+      </div>
+      <div class="navItem">
+        Watch
+      </div>
+      <div class="navItem">
+        TV
+      </div>
+      <div class="navItem">
+        Music
+      </div>
+      <div class="navItem">
+        Support
+      </div>
+      <div class="navItemSearch">
+        <!-- plx -->
+        <i class="fa fa-search navItemSearchIcon" aria-hidden="true"></i>
+      </div>
+      <div class="navItemBag">
+        <i  class="fa fa-shopping-bag" aria-hidden="true"></i>
+
+      </div>
+    </div>
+  </div>
+  <div class="bagItems">
+    <div class="bagItemsMainDiv">
+
+    <h1>Items in your Bag</h1>
+    <div  ng-repeat="c in cartProducts" >
+
+        <div class="bagItemsImg" style="background-image: url('{{c.imgurl}}');">
+
+        </div>
+        <div class="bagItemsInfo">
+
+          <p class="bagItemsInfoItems1">
+            {{c.name}}
+          </p>
+
+
+          <p class="bagItemsInfoItems4" >
+            Total - {{c.total | currency}}
+          </p>
+          <hr />
+
+
+
+          <p class="bagItemsInfoItems3">Qty({{c.qty}})</p>
+          <p class="bagItemsInfoItems2">
+            Price = {{c.price | currency}}
+          </p>
+
+          <h5 ng-click="removeFromCart(c)"  class="bagItemsInfoBtn">Remove Item</h5>
+
+        </div>
+        </div>
+
+
+
+    </div>
+    <div class="bottomOfBag">
+      <hr />
+      <div class="trigger">
+        <div bag-dir  class="bagItemsInfoPurchaseBtn">
+        <p>
+          Purchase
+        </p>
+      </div>
+        <div class="payHere">
+          <form ng-submit='charge(payment); purchaseDone();' class='stripePaymentForm'>
+            <div class="stripePaymentFormTitle">
+
+              <h1 >Pay With Stripe</h1><br><br>
+
+              <section class='form-group' >
+                <label>Price to charge:</label>
+                <h1 style="background: white;" class="form-control" ng-model="mockPrice" >Total: {{orderTotal | currency}}</h1>
+              </section>
+
+              <section class='form-group1'>
+                  <label class="labels">Name on card:</label>
+                  <input
+                  type="text"
+                  name="name"
+                  class='form-control'
+                  placeholder='Enter your name here!!'
+                  required>
+              </section>
+
+              <section class='form-group2'>
+                  <label>Card number:</label>
+                  <input
+                  class='form-control'
+                  ng-model="payment.card.number"
+                  type="text"
+                  placeholder="Enter Credit card number here!!"
+                  required>
+              </section>
+
+              <section class='form-group3'>
+                  <label>CVC:</label>
+                  <input
+                  class='form-control'
+                  ng-model="payment.card.cvc"
+                  placeholder='Enter card CVC number here'
+                  type="text"
+                  required>
+              </section>
+
+
+              <section class='form-group4'>
+                  <label>Exp. Month</label>
+                  <input
+                  class='form-control'
+                  ng-model="payment.card.exp_month"
+                  type="text"
+                  name="name"
+                  placeholder="Month">
+              </section>
+
+              <section class='form-group5'>
+                  <label>Exp. Year</label>
+                  <input
+                  class='form-control'
+                  ng-model="payment.card.exp_year"
+                  type="text"
+                  name="name"
+                  placeholder="Year ex '19'">
+              </section>
+
+              <button class='stripeConfirmBtn' type='sumbit'>Confirm</button>
+
+
+            </div>
+          </form>
+        </div>
+      </div>
+      <h3 class="cancelBtn">Cancel Order</h3>
+      <h3 class="bagItemsInfoOrderTotal">Order Total =  {{orderTotal | currency}}</h3>
+
+    </div>
+  </div>
+</div>
+<div class="mobileBagBody">
+
+
+<div class="BagNavBarMobile">
+  <div class="BagNavBarMobileBars">
+    <span class="BagNavBarMobileBarsSpan1"></span>
+    <span class="BagNavBarMobileBarsSpan2"></span>
+  </div>
+  <div class="BagNavBarMobileApple">
+    <i class="fa fa-apple fa-4x appleMobile" aria-hidden="true"></i>
+  </div>
+  <div class="BagNavBarMobileBag">
+    <i class="fa fa-shopping-bag fa-4x bagMobile" aria-hidden="true"></i>
+  </div>
+</div>
+<div ng-repeat="c in cartProducts" class="productsInCartMobile">
+    <div class="productsInCartMobileImg" style="background-image:  url('{{c.imgurl}}');">
+
+    </div>
+    <div class="productsInCartMobileDetails">
+      <h1>{{c.name}}</h1>
+      <p>Total - {{c.total | currency}}</p>
+      <p>Qty({{c.qty}})</p>
+      <h5 ng-click="removeFromCart(c)"  >Remove Item</h5>
+    </div>
+  </div>
+  <div class="productsInCartMobileCheckout">
+    <div class="productsInCartMobileCheckoutBtn">
+      <p id="checkoutMobile">
+        Checkout
+      </p>
+    </div>
+  </div>
+  <form ng-submit='charge(payment); purchaseDone();' class='stripePaymentFormMobile'>
+    <div class="stripePaymentFormTitle">
+
+      <h1 class="stripePaymentFormMobileH1" >Pay With Stripe</h1><br><br>
+
+      <section class='form-group' >
+        <label class="stripePaymentFormMobileLabel">Price to charge:</label>
+        <h1 style="background: white;" class="form-control formMobile" ng-model="mockPrice" >Total: {{orderTotal | currency}}</h1>
+      </section>
+
+      <section class='form-group1 formMobile1'>
+          <label class="labels">Name on card:</label>
+          <input
+          type="text"
+          name="name"
+          class='form-control'
+          placeholder='Enter your name here!!'
+          required style="width: 300px; height: 50px;">
+      </section>
+
+      <section class='form-group2'>
+          <label>Card number:</label>
+          <input
+          class='form-control'
+          ng-model="payment.card.number"
+          type="text"
+          placeholder="Enter Credit card number here!!"
+          required style="width: 300px; height: 50px;">
+      </section>
+
+      <section class='form-group3'>
+          <label >CVC:</label>
+          <input
+          class='form-control'
+          ng-model="payment.card.cvc"
+          placeholder='Enter card CVC number here'
+          type="text"
+          required style="width: 300px; height: 50px;">
+      </section>
+
+
+      <section class='form-group4'>
+          <label>Exp. Month</label>
+          <input
+          class='form-control'
+          ng-model="payment.card.exp_month"
+          type="text"
+          name="name"
+          placeholder="Month" style="width: 300px; height: 50px;">
+      </section>
+
+      <section class='form-group5'>
+          <label>Exp. Year</label>
+          <input
+          class='form-control'
+          ng-model="payment.card.exp_year"
+          type="text"
+          name="name"
+          placeholder="Year ex '19'" style="width: 300px; height: 50px;">
+      </section>
+
+      <button class='stripeConfirmBtnMobile' type='sumbit'>Confirm</button>
+
+
+    </div>
+  </form>
+  </div>

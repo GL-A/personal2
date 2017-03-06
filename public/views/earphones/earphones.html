@@ -1,0 +1,53 @@
+<div class="headphonesbody">
+
+
+      <div class="earphonesMainImg"  >
+
+        <nav-dir></nav-dir>
+          <div class="headerContainer">
+            <h1>{{getEarphones[0].type}}</h1>
+
+          </div>
+      </div>
+
+      <div ng-repeat="p in getEarphones">
+        <div class="headphonesProductContainer" style="height: {{p.height}}">
+          <div class="headphonesProductInfo">
+            <h1>{{p.name}}</h1>
+
+            <p>
+              {{p.description}}
+            </p>
+
+            <ul ng-repeat="f in p.features">
+              <li>
+                {{f}}
+              </li>
+            </ul>
+            <p id="buttonSection">
+              ${{p.price}}
+
+              <button ng-click="addToCart(p)" class="headphonesProductButton">Add To Bag</button>
+            </p>
+          </div>
+          <div class="headphonesProductImgDiv" style="background-image: url({{p.imgurl}})">
+          </div>
+        </div>
+
+      </div>
+      <div ng-repeat="p in getEarphones">
+        <div class="headphonesProductContainerLrg" style="background-image: url('{{p.imgurl}}')">
+          <button ng-click="addToCart(p)" class="headphonesProductButtonLrg">Add To Bag</button>
+        </div>
+
+      </div>
+
+
+
+
+    <end-of-page-dir></end-of-page-dir>
+    <div class="floatingLogIn">
+    <a ui-sref="bag" ><button class="floatingLogInBtn">Bag</button></a>
+    </div>
+
+</div>
